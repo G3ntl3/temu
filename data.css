@@ -1,0 +1,102 @@
+.onhv:hover{
+    color: white !important;
+    font-size: +20px ;
+    
+}
+.wifi{
+    height: 50px !important;
+}
+.gentle{
+    font-size: 30px !important;
+    font-weight: 900;
+    font-family: 'Ultra';
+;
+}
+.section1{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(18,40,98);
+}
+.textbody{
+    margin: 100px 40px;
+    /* width: auto; */
+}
+
+#welcome{
+    font-family: 'Bitter', serif;
+ color: white;
+    font-size: 80px !important;
+}
+#text2{
+    font-size: larger;
+    font-family: 'Bitter', serif;
+    font-style: 'Pixelify Sans';
+    font-weight: 900;
+    color: white;
+}
+.imga{
+    width: 700px;
+    height: 500px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+#lgn {
+    padding: 5px 25px;
+    border-radius: 15px;
+    margin: 10px;
+/* font-style: oblique; */
+font-weight: 600;
+background-color: rgb(46,175,219);
+
+}
+#sgn{
+    padding: 5px 25px;
+    border-radius: 15px;
+/* font-style: oblique; */
+font-weight: 600;
+background-color: rgb(46,175,219);
+
+}
+.bnt:hover{
+    background-color: rgb(16,31,72);
+    color: white;
+    border-color: grey;
+}
+#btns:hover{
+    background-color: rgb(16,31,72) !important; 
+    color: white !important;
+}
+
+
+
+
+@media (max-width:600px) {
+    *{
+        /* font-size: +20px; */
+    }
+.navbar{
+    display: none;
+    flex-direction: column;
+    position:absolute;
+}    
+#btns{
+    display: none;
+}
+.imga{
+    display: none;
+}
+#welcome{
+    font-size: 50px !important;
+}
+.textbody{
+    /* margin-left: -5px; */
+}
+.onhv:hover{
+    color: white !important;
+    /* font-size: +20px ; */
+    
+}
+
+}
+
+

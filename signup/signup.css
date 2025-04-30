@@ -1,0 +1,62 @@
+body{
+    background-color: black !important;
+}
+
+.box{
+box-sizing: border-box;
+width:450px;
+/* border: 2px solid red; */
+margin: auto;
+margin-top: 0px;
+background-image: radial-gradient(rgb(18,142,214), rgb(17,48,112));
+color:white;
+}
+.fn{
+    padding: 10px 0px 6px 10px ;
+    width:320px;
+    outline: none;
+    border: none;
+    border-left: 1px solid black; 
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin:20px 0px 5px 0px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sgn{
+    padding: 10px 60px;  
+    margin-bottom: 10px; 
+    border: none;
+    border-left: 1px solid black; 
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    background-color: rgb(46,175,219);
+}
+#sgn:hover{
+    color: white;
+    border-radius: 5px;
+    background-image: radial-gradient(rgb(18,142,214), rgb(17,48,112));
+    padding: 10px 70px ;
+    
+}
+a{
+    color: black !important;
+}
+a:hover{
+    color: white !important;
+}
+button{
+    padding: 10px 60px;  
+    margin-bottom: 10px; 
+    border: none;
+    border-left: 1px solid black; 
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(46,175,219);
+}
+button:hover{
+    color: white !important;
+    border-radius: 5px;
+    background-image: radial-gradient(rgb(18,142,214), rgb(17,48,112));
+    padding: 10px 70px ;
+}

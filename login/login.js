@@ -16,17 +16,20 @@ const toast = (text, backgroundcolor, textColor) => {
 
 
 var savedData = JSON.parse(localStorage.getItem('savedata'))
-// console.log(savedData);
+let isUserExist = (savedData.find(data => data.Password == loginPassword.value && data.Email == loginEmail.value)) 
+
+console.log(isUserExist);
 
 
 const logIn = () => {
-    console.log(savedData.find('O8fcjhkdbvijh2.'));
-    
-    
-    // if( loginPassword.value=savedData.find(loginPassword.value)){
+    if (isUserExist) {
+       alert('welcome')
+    }
+    else {
+        alert('wrong info')
+    }
+    //     var log_password = loginPassword.value
+    // if(l)
 
 
-    //     // alert(9)
-    // }
-    
 }

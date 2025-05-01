@@ -31,14 +31,14 @@
 
  <div class="form-container py-5">
       <p class="title">Welcome back</p>
-      <form class="form">
-        <input type="email" class="input" placeholder="Email" >
-        <input type="password" class="input" placeholder="Password">
+      <div class="form">
+        <input type="email" class="input" placeholder="Email" id="loginEmail" >
+        <input type="password" class="input" placeholder="Password" id="loginPassword">
         <p class="page-link">
           <span class="page-link-label">Forgot Password?</span>
         </p>
-        <button class="form-btn">Log in</button>
-      </form>
+        <button class="form-btn" onclick="logIn()">Log in</button>
+      </div>
       <p class="sign-up-label">
         Don't have an account?<a href="../signup/signup.html" class="sign-up-link" >Sign up</span>
       </p>

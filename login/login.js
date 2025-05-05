@@ -4,32 +4,44 @@ const toast = (text, backgroundcolor, textColor) => {
         duration: 2000,
         close: true,
         gravity: "top", // `top` or `bottom`
-        position: "center", // `left`, `center` or `right`
+        position: "left", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             background: backgroundcolor,
             color: textColor,
+            marginTop: '100px'
         },
         onClick: function () { } // Callback after click
     }).showToast()
 }
 
 
-var savedData = JSON.parse(localStorage.getItem('savedata'))
-let isUserExist = (savedData.find(data => data.Password == loginPassword.value && data.Email == loginEmail.value)) 
+var savedData = JSON.parse(localStorage.getItem('savedata')) || []
 
-console.log(isUserExist);
 
+
+let isUserExist 
 
 const logIn = () => {
+
+     isUserExist = (savedData.find(data => data.Password == loginPassword.value && data.Email == loginEmail.value))
+
     if (isUserExist) {
-       alert('welcome')
+        toast('Log in successful', 'green', 'white');
+
+        
+        window.location.href = '../temu.html'
+        // alert('Welcome')
+
     }
+
     else {
-        alert('wrong info')
+        // alert('wrongpassword')
+        toast('Wrong password', 'red', 'white');
+        // alert('failed')  
     }
-    //     var log_password = loginPassword.value
-    // if(l)
+
 
 
 }
+

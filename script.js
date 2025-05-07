@@ -73,12 +73,12 @@ const displayItem = () => {
 
 // displaying username in the dashboard
 
-const userwelcome = document.getElementById("userwelcome");
+// const userwelcome = document.getElementById("userwelcome");
 
 if (localStorage.person) {
-  userwelcome.innerHTML = `${userdataafterlogin.fullName}`;
-  const userdataafterlogin = JSON.parse(localStorage.getItem("person"));
-  console.log(userdataafterlogin);
+    const userdataafterlogin = JSON.parse(localStorage.getItem("person"));
+  userwelcome.innerHTML = `${userdataafterlogin.userName}`;
+//   console.log(userdataafterlogin);
 } else {
     
   hidebody.innerHTML = `<h4 class="my-3 text-center">You are not signed in, redirecting you to sign in...</h4>`

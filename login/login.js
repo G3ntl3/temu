@@ -9,8 +9,6 @@ const toast = (text, backgroundcolor, textColor) => {
     style: {
       background: backgroundcolor,
       color: textColor,
-      
-
     },
     onClick: function () {}, // Callback after click
   }).showToast();
@@ -26,7 +24,7 @@ let isUserExist;
 // const userwelcome = document.getElementById("userwelcome");
 
 const logIn = () => {
-    console.log(savedData.fullName)
+    // console.log(savedData.fullName)
 
   login.innerHTML = `
 <section class="dots-container">
@@ -44,7 +42,7 @@ const logIn = () => {
     (data) =>
       data.Password == loginPassword.value && data.Email == loginEmail.value
   );
-  console.log(isUserExist);
+  // console.log(isUserExist);
   // send to localStorage as person after user logs in
   localStorage.person = JSON.stringify(isUserExist);
 
@@ -79,7 +77,7 @@ const logIn = () => {
     toast("Log in successful", "green", "white");
     setTimeout(() => {
       window.location.href = "../temu.html";
-      console.log(savedData.fullName);
+      // console.log(savedData.fullName);
     }, 1000);
 
   } else {

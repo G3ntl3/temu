@@ -91,7 +91,7 @@ const loading = () => {
     setTimeout(() => {
         
         submit.innerHTML = `<span>Create Account</span>`;
-    }, 1500);
+    }, 1000);
 };
 // loading();
 // console.log(detailsArray.find('O8fcjhkdbvijh2.  '));

@@ -1,3 +1,19 @@
+const toast = (text, backgroundcolor, textColor) => {
+  Toastify({
+    text: text,
+    duration: 1700,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: backgroundcolor,
+      color: textColor,
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+};
+
 const cart = [];
 
 const addItem = () => {
@@ -76,13 +92,20 @@ const displayItem = () => {
 // const userwelcome = document.getElementById("userwelcome");
 
 if (localStorage.person) {
-    const userdataafterlogin = JSON.parse(localStorage.getItem("person"));
-  userwelcome.innerHTML = `${userdataafterlogin.userName}`;
-//   console.log(userdataafterlogin);
+  const userdataafterlogin = JSON.parse(localStorage.getItem("person"));
+  userwelcome.innerHTML = `Welcome ${userdataafterlogin.userName} !! `;
+  //   console.log(userdataafterlogin);
 } else {
-    
-  hidebody.innerHTML = `<h4 class="my-3 text-center">You are not signed in, redirecting you to sign in...</h4>`
+  hidebody.innerHTML = `<h4 class="my-3 text-center">You are not signed in, redirecting you to sign in...</h4>`;
   setTimeout(() => {
     window.location.href = "/signup/signup.html";
   }, 2000);
 }
+
+const signOut = () => {
+  localStorage.removeItem("person");
+  toast("Logging you out, bye", "red", "white");
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 2000);
+};

@@ -100,3 +100,28 @@ background-color: rgb(46,175,219);
 }
 
 
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* Ensure buttons look consistent */
+.btn .nav-link {
+  padding: 0;
+  color: inherit;
+}
+
+/* Fix hover states */
+.onhv:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
